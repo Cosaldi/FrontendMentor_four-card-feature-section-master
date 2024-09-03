@@ -1,0 +1,29 @@
+.header {
+    margin-top: 5.625rem;
+    margin-bottom: 4.75rem;
+    text-align: center;
+
+    &__label {
+        display: block;
+        margin-bottom: 1rem;
+        color: $very-dark-blue;
+        font-size: $font-l;
+    }
+
+    &__title {
+        margin-bottom: 1.5rem;
+        color: $very-dark-blue;
+        font-family: "PoppinsSemiBold";
+        font-size: $font-l;
+    }
+
+    &__desc {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        color: $grayish-blue;
+        font-family: "PoppinsRegular";
+        font-size: $font-s;
+        // word-spacing: 1.5px;
+        line-height: 1.65;
+    }
+}
