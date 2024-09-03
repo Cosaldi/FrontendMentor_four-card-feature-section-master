@@ -9,10 +9,16 @@ $screen-up: (
     "md": "48em", 
     "lg": "62em",
     "xl": "75em",
-    "xxl": "90em"
+    "xxl": "87.5em"
 );
 
-$screen-down: ("qhd": "89.9375em");
+$screen-down: (
+    "sm": "35.9375em", 
+    "md": "47.9375em", 
+    "lg": "61.9375em",
+    "xl": "74.9375em",
+    "xxl": "87.4375em"
+);
 
 @mixin breakpoints-up($size) {
     @media (min-width: map-get($screen-up, $size)) {
