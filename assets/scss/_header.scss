@@ -1,5 +1,5 @@
 .header {
-    margin: 5.625rem auto 4.75rem;
+    margin: 5.3125rem auto 4.75rem;
     width: 90%;
     text-align: center;
 
@@ -13,7 +13,7 @@
 
     &__label {
         display: block;
-        margin-bottom: 1rem;
+        margin-bottom: 0.1875rem;
         color: $very-dark-blue;
         font-size: $font-l;
 
@@ -23,7 +23,7 @@
     }
 
     &__title {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
         color: $very-dark-blue;
         font-family: "PoppinsSemiBold";
         font-size: $font-l;

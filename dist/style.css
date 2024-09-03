@@ -39,7 +39,7 @@ body {
 }
 
 .header {
-  margin: 5.625rem auto 4.75rem;
+  margin: 5.3125rem auto 4.75rem;
   width: 90%;
   text-align: center;
 }
@@ -55,7 +55,7 @@ body {
 }
 .header__label {
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 0.1875rem;
   color: hsl(234, 12%, 34%);
   font-size: 1.5rem;
 }
@@ -65,7 +65,7 @@ body {
   }
 }
 .header__title {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   color: hsl(234, 12%, 34%);
   font-family: "PoppinsSemiBold";
   font-size: 1.5rem;
@@ -144,7 +144,7 @@ body {
   position: relative;
 }
 .card__title {
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.1875rem;
   color: hsl(234, 12%, 34%);
   font-family: "PoppinsSemiBold";
   font-size: 1.25rem;
