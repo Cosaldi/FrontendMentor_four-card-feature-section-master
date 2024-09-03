@@ -1,8 +1,28 @@
 .container {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
+    @include breakpoints-up(md) {
+        flex-direction: row;
+
+        &--split {
+            order: 2;
+            display: flex;
+        }
+    }
+
+    @include breakpoints-up(xl) {
+
+        &--split {
+            order: 0;
+
+            flex-direction: column;
+            height: calc(247px * 2);
+        }
+    }
 }
 
 .card {
@@ -19,6 +39,15 @@
         height: 4px;
         position: absolute;
         top: 0;
+    }
+
+    @include breakpoints-up(md) {
+        flex-basis: 50%;
+        flex-grow: 1;
+
+        &:nth-child(1) {
+            margin-right: 22px;
+        }
     }
 
     &__item {
@@ -52,16 +81,19 @@
             background-color: $cyan;
         }
     }
+
     &--strip-red {
         &::before {
             background-color: $red;
         }
     }
+
     &--strip-orange {
         &::before {
             background-color: $orange;
         }
     }
+
     &--strip-blue {
         &::before {
             background-color: $blue;
