@@ -1,13 +1,25 @@
 .header {
-    margin-top: 5.625rem;
-    margin-bottom: 4.75rem;
+    margin: 5.625rem auto 4.75rem;
+    width: 90%;
     text-align: center;
+
+    @include breakpoints-up(md) {
+        width: 70%;
+    }
+
+    @include breakpoints-up(xl) {
+        max-width: 575px;
+    }
 
     &__label {
         display: block;
         margin-bottom: 1rem;
         color: $very-dark-blue;
         font-size: $font-l;
+
+        @include breakpoints-up(md) {
+            font-size: $font-xl;
+        }
     }
 
     &__title {
@@ -15,6 +27,10 @@
         color: $very-dark-blue;
         font-family: "PoppinsSemiBold";
         font-size: $font-l;
+        
+        @include breakpoints-up(md) {
+            font-size: $font-xl;
+        }
     }
 
     &__desc {
